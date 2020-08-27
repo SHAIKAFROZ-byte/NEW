@@ -1,0 +1,117 @@
+*{
+	padding: 0;
+	margin:0;
+}
+.container{
+	position: relative;
+	top: 100px;
+}
+
+body{
+	 font-family: "Comic Sans MS", cursive, sans-serif;
+
+}
+
+h1{
+	text-align: center;
+	color: green;
+	font-weight: bold;
+	text-transform: uppercase;
+	position: relative;
+	top: 60px;
+	
+}
+
+h2{
+	border: 2px solid black;
+	float: right;
+
+}
+
+#name1{
+  background-color: #FFB6C1;
+}
+
+#name2{
+  color: white;
+  background-color: #FF0000;
+}
+#name3{
+  background-color: #FFFF00;
+}
+
+
+/***********large screen**********/
+@media(min-width: 992px){
+.row>div{
+	border:1px solid red;
+	font-size: 20px;
+	overflow: none;
+	position: relative;
+	left: 10px;
+	background-color: rgb(0,0,0,0.3)
+}
+
+p{
+	clear: right;
+}
+
+.col-lg-4{
+	width: 31%;
+	float: left;
+	margin:10px;
+}
+
+}
+
+/*********** medium scale********************/
+@media(min-width: 768px) and (max-width: 991px){
+	.row>div{
+	border:1px solid red;
+	font-size: 20px;
+	overflow: none;
+	position: relative;
+	left: 30px;
+	margin:10px;
+	float: left;
+	background-color: rgb(0,0,0,0.3);
+    position:relative;
+    bottom: 40px
+
+}
+  p{
+  	clear: right;
+  }               
+ .col-md-6{
+ 	width: 40%;
+ 	float: left;
+ 	padding: 10px;
+ }
+ #red{
+ 	width: 85%;
+ }
+
+}
+
+/************** small screen************************/
+@media(min-width: 0px) and (max-width: 767px){
+	.row>div{
+	border:2px solid black;
+	font-size: 20px;
+	overflow: none;
+	position: relative;
+	left: 10px;
+	background-color: rgb(0,0,0,0.3);
+	padding: 0;
+	margin: 10px;
+}
+
+ p{
+  	clear: right;
+  }    
+
+.col-sm-12{
+	width: 95%;
+}
+
+}
